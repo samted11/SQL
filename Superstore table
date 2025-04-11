@@ -28,10 +28,11 @@ VALUES
 
 #In this SQL, I'm querying a database with multiple tables in it to quantity statistics about customer 
 
-#Order items by price
+#Use a SELECT statement to order the items by price.
 SELECT item_name, price
 FROM superstore
-ORDER BY price;
+ORDER BY price desc;
+
 
 #Show a statistic about item prices
 SELECT AVG(price) AS average_price
@@ -59,5 +60,3 @@ FROM superstore WHERE category = 'Kitchen Supplies';
 SELECT stock_quantity
 FROM superstore
 WHERE item_name = 'Air Purifier';
-
-
